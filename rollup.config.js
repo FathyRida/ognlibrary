@@ -9,6 +9,9 @@ const packageJson = require("./package.json");
 export default [
   {
     input: "src/index.ts",
+    ignore: [
+      './stories/**/*'
+    ],
     output: [
       {
         file: packageJson.main,
